@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/mateusvsv/challenge_backend#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "diacritics": "^1.2.3",
+    "express": "^4.13.4",
+    "http-status-codes": "^1.0.6"
   }
 }
