@@ -1,0 +1,22 @@
+{
+  "name": "challenge_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusvsv/challenge_backend.git"
+  },
+  "author": "Mateus Vieira S. Veloso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusvsv/challenge_backend/issues"
+  },
+  "homepage": "https://github.com/mateusvsv/challenge_backend#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
