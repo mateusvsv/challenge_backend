@@ -10,7 +10,7 @@ app.get("/", function(req, res) {
 
 app.get('/palindromo/:frase', function (req, res) {
     var frase = req.params.frase;
-    palindromo = is_palindrome(frase);
+    palindromo = isPalindrome(frase);
     if (palindromo)
         res.status(HttpStatus.OK);
     else 
@@ -18,7 +18,7 @@ app.get('/palindromo/:frase', function (req, res) {
     res.send(palindromo);
 });
 
-function is_palindrome(frase){
+function isPalindrome(frase){
     var palindroma = true;
     frase = formataFrase(frase);
     meio_frase = frase.length/2;
@@ -39,3 +39,8 @@ function formataFrase(frase){
 var server = app.listen(8080, function () {
     console.log("Sua app rodando na porta %s...", server.address().port);
 });
+
+exports._test = {
+    isPalindrome: isPalindrome,
+    formataFrase: formataFrase
+}

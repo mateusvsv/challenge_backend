@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "dependencies": {
     "diacritics": "^1.2.3",
     "express": "^4.13.4",
-    "http-status-codes": "^1.0.6"
+    "http-status-codes": "^1.0.6",
+    "mocha": "^2.5.3",
+    "unit.js": "^2.0.0"
   }
 }
