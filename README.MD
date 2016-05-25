@@ -26,6 +26,7 @@ Exemplo de utilização:
     localhost:8080/palindromo/MACACO (400 - False)
     localhost:8080/palindromo/A-MAN-A-PLAN-A-CANAL-PANAMA (200 - True)
 
-## Implementações Futuras
+## Testes Unitários
 
-- Testes unitários
+    Para executar os testes unitários use:
+    npm test
