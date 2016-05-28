@@ -11,11 +11,10 @@ app.get("/", function(req, res) {
 app.get('/palindromo/:frase', function (req, res) {
     var frase = req.params.frase;
     palindromo = isPalindrome(frase);
+    var status = HttpStatus.BAD_REQUEST;
     if (palindromo)
-        res.status(HttpStatus.OK);
-    else 
-        res.status(HttpStatus.BAD_REQUEST);
-    res.send(palindromo);
+        status = HttpStatus.OK;
+    res.sendStatus(status);
 });
 
 function isPalindrome(frase){
